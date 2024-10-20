@@ -9,6 +9,15 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		keyframes: {
+			pulseBorder: {
+			  '0%, 100%': { boxShadow: '0 0 0 0 rgba(168, 85, 247, 0.7)' },
+			  '50%': { boxShadow: '0 0 20px 10px rgba(168, 85, 247, 0.5)' },
+			},
+		  },
+		  animation: {
+			pulseBorder: 'pulseBorder 3s infinite',
+		  },
 		fontFamily: {
 			poppins: ["Poppins", "sans-serif"],
 		  },
