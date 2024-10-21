@@ -9,7 +9,7 @@ export default function Home() {
     <div className="bg-gradient-to-b from-[#010A20] to-[#2E073F] overflow-x-hidden">
       <header className="mb-12">
         <nav className="p-4 flex items-center justify-between space-x-2 text-white">
-          <h1 className="text-lg text-left">
+          <h1 className="text-sm sm:text-lg text-left">
             <span className=" text-[#AD49E1]">{"<h1> "}</span>
             Pedro
             <span className=" text-[#AD49E1]">{"<h1/> "}</span>
@@ -32,7 +32,7 @@ export default function Home() {
       </header>
       <main className="relative flex flex-col mb-12">
         <section
-          className=" h-full w-2/3 md:w-80 mb-12 mx-auto border-2 rounded-md border-[#AD49E1] animate-pulseBorder overflow-hidden"
+          className=" h-full w-3/4 md:w-80 mb-12 mx-auto border-2 rounded-md border-[#AD49E1] animate-pulseBorder overflow-hidden"
           id="card"
         >
           <img
@@ -131,23 +131,23 @@ export default function Home() {
         </h1>
 
         <section
-          className="h-full w-2/3  bg-[#2E073F] p-6 rounded-xl mx-auto text-white mb-12"
+          className="h-full w-3/4 lg:w-2/3 bg-[#2E073F] p-6 rounded-xl mx-auto text-white mb-12"
           id="about-me"
         >
-          <div className="mb-3 text-2xl">
-            <div className="text-[#E4B1F0]">{"<h1>"}</div>
-            <p className="ml-12">
-              Meu nome é
-              <br />
+          <div className="text-2xl">
+            <div className="text-[#E4B1F0] text-2xl">{"<h1>"}</div>
+            <p className="ml-8 break-words text-balance">
+              Meu nome é 
+              <br/>
               <span className="text-[#AD49E1]">Pedro Figueiredo,</span>
               <br />
-              <span>sou um Desenvolvedor Fullstack</span>
+              sou um Desenvolvedor Fullstack
             </p>
-            <div className="text-[#E4B1F0]">{"</h1>"}</div>
+            <div className="text-[#E4B1F0] text-2xl">{"</h1>"}</div>
           </div>
           <div className="text-xl">
             <div className="text-[#E4B1F0] text-2xl">{"<p>"}</div>
-            <p className="ml-12 text-pretty">
+            <p className="ml-8 text-pretty">
               Desenvolvo aplicações de forma eficiente, com foco em código limpo
               e escalável. Caso precise, suas buscas acabaram.
             </p>
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
           <div className="text-xl">
             <div className="text-[#E4B1F0] text-2xl">{"<p>"}</div>
-            <p className="ml-12 text-pretty">
+            <p className="ml-8 text-pretty">
               Com foco no fullstack, busco aperfeiçoar minhas habilidades em
               C#/.Net para o Back-End e HTML, CSS, JavaScript, React e Next para
               o Front-End.
@@ -174,7 +174,7 @@ export default function Home() {
         </h1>
 
         <section
-          className="h-full w-2/3 rounded-xl grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 gap-12 mx-auto text-white mb-12"
+          className="h-full w-3/4 lg:w-2/3 rounded-xl grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 gap-12 mx-auto text-white mb-12"
           id="projects"
         >
           <ProjectCard
